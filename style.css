@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+--dark-slate-gray: #35524aff;
+--slate-gray: #627c85ff;
+--air-superiority-blue: #779cabff;
+--tiffany-blue: #a2e8ddff;
+--emerald: #32de8aff;
+}
+
+header {
+    background-color: var(--tiffany-blue);
+    font-family: 'Pixelify Sans', cursive;
+    text-align: center;
+    color: var(--dark-slate-gray);
+    border-bottom: 1px solid var(--dark-slate-gray);
+
+    & h1 {
+        font-weight: bolder;
+    }
+}
