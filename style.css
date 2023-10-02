@@ -1,20 +1,44 @@
 html {
-    box-sizing: border-box;
---dark-slate-gray: #35524aff;
---slate-gray: #627c85ff;
---air-superiority-blue: #779cabff;
---tiffany-blue: #a2e8ddff;
---emerald: #32de8aff;
+    --main_background: #32de8aff;
+    --accent-color: #a2e8ddff;
+    --text_color: #35524aff;
+    --slate-gray: #627c85ff;
+    --air-superiority-blue: #779cabff;
 }
 
+ * {
+    box-sizing: border-box;
+    color: var(--text_color);
+    background-color: var(--main_background);
+ }
+
 header {
-    background-color: var(--tiffany-blue);
-    font-family: 'Pixelify Sans', cursive;
     text-align: center;
-    color: var(--dark-slate-gray);
-    border-bottom: 1px solid var(--dark-slate-gray);
+    border-bottom: 1px solid var(--text_color);
+    height: 20vh;
+    
 
     & h1 {
         font-weight: bolder;
+        font-family: 'Pixelify Sans', cursive;
     }
+}
+
+main {
+    height: 80vh;
+
+    /* > aside {
+        border-right:  1px solid var(--text_color);
+    } */
+
+    > aside > h4 {
+        max-width: 100%;
+        text-decoration: underline;
+    }
+}
+
+.carousel-item > img {
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
